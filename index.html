@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mój formularz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="main">
+        <img src="img/header-background.jpg" alt="Zdjęcie nagłówkowe">
+
+        <nav id="nawigacja">
+            <ul id="menu">
+                <li>
+                    <div class="dropdown">
+                        <div class="dropbtn">Menu 1</div>
+                        <div class="dropdown-content">
+                            <a href="https://www.google.pl">Google</a>
+                            <a href="https://www.facebook.pl">Facebook</a>
+                            <a href="https://www.wykop.pl">Wykop</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Menu 2</button>
+                        <div class="dropdown-content">
+                            <a href="https://www.google.pl">Google</a>
+                            <a href="https://www.facebook.pl">Facebook</a>
+                            <a href="https://www.wykop.pl">Wykop</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Menu 3</button>
+                        <div class="dropdown-content">
+                            <a href="https://www.google.pl">Google</a>
+                            <a href="https://www.facebook.pl">Facebook</a>
+                            <a href="https://www.wykop.pl">Wykop</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+        <div id="formularz">
+
+            <form action="https://formspree.io/tpielaszkiewicz@gmail.com" method="POST">
+                <label for="name">Imię</label><br>
+                <input type="text" name="name" id="name" placeholder="Podaj Imie"><br>
+
+                <label for="lastname">Nazwisko</label><br>
+                <input type="text" name="lastname" id="lastname" placeholder="Podaj Nazwisko"><br>
+
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email" name="_replyto" placeholder="Podaj email"><br>
+
+                <label for="number">Numer telefonu</label><br>
+                <input type="number" name="number" id="number" placeholder="Podaj numer telefonu">
+                <br>
+
+                <label for="list">Wybierz miasto</label><br>
+                <select id="list">
+               <option value = "1">Warszawa</option>
+               <option value = "2">Kraków</option>
+               <option value = "3">Słupsk</option>
+            </select>
+                <br>
+
+                <label>Wybierz płeć</label><br>
+                <label for="radio"><input type="radio" id="radio" name="gender" value="male" checked>Mężczyzna</label><br>
+                <label for="radio2"><input type="radio" id="radio2" name="gender" value="female">Kobieta</label><br>
+
+                <label for="textarea">Wpisz wiadomość</label><br>
+                <textarea maxlength="100" name="textarea" id="textarea" cols="30" rows="5"></textarea><br>
+                <input type="checkbox" name="agreement" /><label>Wyrazam zgodę na przetwarzanie danych osobowych</label><br>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+        <footer id="contact">
+            <h2 id="contact-header">Kontakt</h2>
+            <address id="contact-content">
+            Tomasz Pielaszkiewicz<br /> ul. Kapelanka 6a/118<br />Kraków<br />
+            <a href="mailto:l.badocha@arena108.pl">tpielaszkiewicz@gmail.com</a>
+        </address>
+        </footer>
+    </div>
+</body>
+
+</html>
